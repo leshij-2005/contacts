@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Мои контакты</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="./template/styles/css/bootstrap-theme.min.css" />
+        <link rel="stylesheet" href="./template/styles/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="./template/styles/css/common.css" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="main container auth">
+                <div class="page-header">
+                  <span class="btn btn-success btn-add">Добавить контакт</span>
+                  <h1>Мои  контакты</h1>
+                </div>
+                <div class="list">
+                    <div class="row list-header">
+                        <div class="col-md-3">Имя</div>
+                        <div class="col-md-3">E-mail</div>
+                        <div class="col-md-3">Телефон</div>
+                        <div class="col-md-2">Дата создания</div>
+                        <div class="col-md-1"></div>
+                    </div>
+                    <div class="list-items"></div>
+                    <div class="list-empty">
+                        <h4>Список контактов пуст</h4>
+                        <span class="btn btn-success btn-add">Добавить контакт</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup-manager"></div>
+        
+        <script type="text/javascript" src="./template/scripts/jquery.js"></script>
+        <script type="text/javascript" src="./template/scripts/common.js"></script>
+        
+        <script type="text/javascript" src="./control/popup/script.js"></script>
+        <link rel="stylesheet" href="./control/popup/style.css" />
+        
+        <script type="text/javascript">
+            initList();
+        </script>
+    </body>
+</html>

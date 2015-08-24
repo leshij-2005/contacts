@@ -1,0 +1,47 @@
+.popup-manager
+{
+  background: rgba(0, 0, 0, 0.3);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+}
+.popup-manager.__open, .popup-manager.__select
+{
+  display: block;
+}
+.popup
+{
+  /* width: 730px; */
+  min-height: 200px;
+  max-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 30px 10px;
+  background: #fff;
+  z-index: 10;
+}
+.popup-title
+{
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+.popup-close
+{
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px
+}
+
+.popup-content
+{
+  max-height: 600px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
